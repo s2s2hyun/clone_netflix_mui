@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { grey } from "@mui/material/colors";
 import BorderedBottomBox from "./../../Wrapper/BorderedBottom";
 
-export default function Header() {
+export default function Header({ openModal }) {
   return (
     <BorderedBottomBox>
       <AppBar
@@ -58,7 +58,7 @@ export default function Header() {
               </Select>
             </Grid>
             <Grid item xs="auto">
-              <Button color="primary" variant="contained">
+              <Button color="primary" variant="contained" onClick={openModal}>
                 Sign in
               </Button>
             </Grid>
